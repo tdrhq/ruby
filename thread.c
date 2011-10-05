@@ -1116,7 +1116,7 @@ rb_thread_blocking_region(
     rb_blocking_function_t *func, void *data1,
     rb_unblock_function_t *ubf, void *data2)
 {
-    VALUE val;
+    VALUE val = Qnil;
     rb_thread_t *th = GET_THREAD();
     int saved_errno = 0;
 
